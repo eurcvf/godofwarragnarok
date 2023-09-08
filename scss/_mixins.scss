@@ -1,0 +1,14 @@
+/* Mixin Responsivo */
+@mixin responsive($screenWidth) {
+  @media(max-width: $screenWidth) {
+    @content;
+  }
+}
+
+/* Mixin Flex */
+@mixin flex($direction, $align, $justify) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}

@@ -1,0 +1,95 @@
+.subtitle {
+  display: flex;
+  align-items: center;
+
+  span {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 1.5rem;
+  }
+
+  strong {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+
+.card-character {
+  width: 100%;
+  max-width: 38.4rem;
+
+  .image {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 52rem;
+    margin-bottom: 2.4rem;
+    overflow: hidden;
+
+    img {
+      transition: all .3s ease;
+    }
+
+    .btn-card {
+      position: absolute;
+      bottom: 0;
+      padding: 1.8rem 3.6rem;
+      font-size: 1.8rem;
+      font-weight: 700;
+      background-color: #3265EA;
+      line-height: 2rem;
+      color: #FFF;
+      opacity: 0;
+      transition: all .3s ease;
+    }
+  }
+
+  .info {
+    h3 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      line-height: 2rem;
+      margin-bottom: 0.7rem;
+    }
+
+    span {
+      font-size: 1.4rem;
+      line-height: 1.5rem;
+    }
+  }
+
+  &:hover {
+    .image {
+      img {
+        transform: scale(1.1);
+      }
+
+      .btn-card {
+        bottom: 5.7rem;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+h1 {
+  font-size: 12rem;
+  font-weight: 700;
+  line-height: 97.5%;
+}
+
+h2 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+p {
+  color: #BDC2CB;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 160%;
+}
