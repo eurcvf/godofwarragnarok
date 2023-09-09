@@ -100,6 +100,106 @@
       }
     }
   }
+
+  @include responsive(1200px) {
+    padding: 8rem 0;
+    height: auto;
+    background-position-x: 30%;
+
+    .container {
+      .left {
+        max-width: 64em;
+
+        p {
+          font-size: 1.8rem;
+        }
+      }
+
+      .right {
+        position: relative;
+        top: 0;
+        max-width: 35.3rem;
+
+        button {
+          height: 19.7rem;
+        }
+      }
+    }
+  }
+
+  @include responsive(991px) {
+    padding: 6rem 0;
+    background-size: cover;
+
+    .container {
+      flex-direction: column;
+      align-items: center;
+
+      .left {
+        text-align: center;
+        margin-bottom: 4rem;
+
+        .value {
+          justify-content: center;
+        }
+      }
+
+      .right {
+        text-align: center;
+
+        button {
+          margin-bottom: 3rem;
+        }
+
+        .year-old {
+          flex-direction: column;
+
+          p {
+            margin-left: 0;
+            margin-top: 2rem;
+          }
+        }
+      }
+    }
+  }
+
+  @include responsive(560px) {
+    padding: 4rem 0;
+
+    .container {
+      .left {
+        h1 {
+          font-size: 6rem;
+          margin: 1.5rem 0;
+        }
+
+        p {
+          font-size: 1.4rem;
+          max-width: 80%;
+          margin: 0 auto;
+          margin-bottom: 3rem;
+        }
+
+        .value {
+          flex-direction: column;
+        }
+      }
+
+      .right {
+        max-width: 31rem;
+
+        button {
+          height: 17.7rem;
+        }
+
+        .year-old {
+          p {
+            line-height: 2.4rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 .s-info {
@@ -135,6 +235,32 @@
       }
     }
   }
+
+  @include responsive(1200px) {
+    padding: 4rem 0;
+    height: auto;
+
+    ul {
+      flex-wrap: wrap;
+      gap: 3rem 0;
+
+      li {
+        width: 33.3%;
+      }
+    }
+  }
+
+  @include responsive(560px) {
+    ul {
+      li {
+        width: 50%;
+
+        span {
+          max-width: 14.5rem;
+        }
+      }
+    }
+  }
 }
 
 .s-journey {
@@ -145,6 +271,7 @@
   background-position: top center;
   background-repeat: no-repeat;
   overflow: hidden;
+  display: none;
 
   .container {
     display: flex;
@@ -194,6 +321,7 @@
 }
 
 .s-characters {
+  display: none;
   padding-top: 17.6rem;
   padding-bottom: 14.3rem;
   background-image: url('../img/bg-characters.png');
