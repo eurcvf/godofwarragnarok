@@ -2,7 +2,8 @@
   height: 80rem;
   padding-top: 16.4rem;
   padding-bottom: 10.3rem;
-  background: url('../img/bg-hero.jpg') no-repeat center center;
+  background: url('../img/bg-hero.jpg') no-repeat top center;
+  background-attachment: fixed;
 
   .container {
     @include flex(row, flex-end, space-between);
